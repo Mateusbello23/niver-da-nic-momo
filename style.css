@@ -1,38 +1,28 @@
-body, html {
-  height: 100%;
+body {
+  background-image: url('fundo.jpg'); /* Caminho para o fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-}
-
-#video-fundo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.conteudo {
-  position: relative;
-  z-index: 1;
-  text-align: center;
+  height: 100vh;
   color: white;
-  padding-top: 50px;
+  text-align: center;
+  font-family: sans-serif;
 }
 
-img {
+.mensagem {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.imagem-clicavel {
   width: 300px;
-  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
-  transition: transform 0.3s;
 }
 
-img:hover {
   transform: scale(1.05);
 }
 
